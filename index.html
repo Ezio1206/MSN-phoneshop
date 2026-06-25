@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSN Mobile — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav id="main-nav">
+    <div class="nav-inner">
+        <a class="logo" href="index.html">MS<span>N</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latest.html">Latest Release</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:10px;">
+            <a class="btn desktop-cta" href="latest.html">Shop Now</a>
+            <button id="nav-toggle-btn" class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="latest.html">📱 Latest Release</a></li>
+            <li><a href="review.html">💬 Review</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+        <a class="btn mobile-cta" href="latest.html">Shop Now →</a>
+    </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Hero Section-->
+    <section class="hero">
+        <div class="container">
+            <span class="tag">✦ Cambodia's #1 Mobile Shop</span>
+            <h1>Find your perfect<br/>phone at MSN.</h1>
+            <p>The latest flagships, best mid-range picks, and unbeatable deals — all unlocked, all with warranty.</p>
+            <div class="hero-btns">
+                <a class="btn" href="latest.html">See latest phones</a>
+                <a class="btn btn-outline" href="about.html">About us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status Bar -->
+    <div class="container">
+        <div class="stats">
+            <div class="stat-item"><strong>500+</strong><span>Phone models</span></div>
+            <div class="stat-item"><strong>50K+</strong><span>Happy customers</span></div>
+            <div class="stat-item"><strong>24h</strong><span>Delivery speed</span></div>
+            <div class="stat-item"><strong>2yr</strong><span>Warranty</span></div>
+        </div>
+    </div>
+
+    <!-- Popular Phone -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-head">
+                <span class="tag">🔥 Top picks</span>
+                <h2>Most popular right now</h2>
+                <p>Our best-selling phones this week, hand-picked for performance and value.</p>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div><img src="Pic/OnePlus_12.jpg" width="246" height="246"></div>
+                    <div class="product-info">
+                        <span class="brand">OnePlus</span>
+                        <h3>OnePlus 12</h3>
+                        <div class="product-specs"><span class="tag">1TB</span><span class="tag">Ram: 24GB</span></div>
+                        <div class="product-footer">
+                            <div class="price"><span class="old">$699</span>$689</div>
+                            <a class="btn btn-sm" href="latest.html">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div><img src="Pic/Galaxy_s25_ultra.jpg" width="246" height="246"></div>
+                    <div class="product-info">
+                        <span class="brand">Samsung</span>
+                        <h3>Galaxy S25 Ultra</h3>
+                        <div class="product-specs"><span class="tag">512GB</span><span class="tag">Ram: 12/16GB</span></div>
+                        <div class="product-footer">
+                            <div class="price"><span class="old">$799</span>$764.99</div>
+                            <a class="btn btn-sm" href="latest.html">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div><img src="Pic/Iphone_16_Pro.jpg" width="246" height="246"></div>
+                    <div class="product-info">
+                        <span class="brand">Apple</span>
+                        <h3>Iphone 16 Pro</h3>
+                        <div class="product-specs"><span class="tag">512GB</span><span class="tag">Ram: 8GB</span></div>
+                        <div class="product-footer">
+                            <div class="price"><span class="old">$699</span>$674.99</div>
+                            <a class="btn btn-sm" href="latest.html">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div><img src="Pic/Oppo_reno_15_pro_5g.jpg" width="246" height="246"></div>
+                    <div class="product-info">
+                        <span class="brand">Oppo</span>
+                        <h3>Oppo Reno 15 Pro 5G</h3>
+                        <div class="product-specs"><span class="tag">256GB</span><span class="tag">Ram: 12GB</span></div>
+                        <div class="product-footer">
+                            <div class="price"><span class="old">$599</span>$568</div>
+                            <a class="btn btn-sm" href="latest.html">View</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner container">
+            <p>© 2026 MSN Mobile. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Hamberger -->
+    <script>
+        // Mobile menu toggle
+        const nav = document.getElementById("main-nav");
+        const overlay = document.getElementById("nav-overlay");
+        const toggle = document.getElementById("nav-toggle-btn");
+
+        function openMenu() {
+            nav.classList.add("menu-open");
+            overlay.classList.add("visible");
+        }
+        function closeMenu() {
+            nav.classList.remove("menu-open");
+            overlay.classList.remove("visible");
+        }
+
+        toggle.addEventListener("click", () => {
+            nav.classList.contains("menu-open") ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener("click", closeMenu);
+        document.querySelectorAll(".mobile-menu a").forEach(a => a.addEventListener("click", closeMenu));
+        // Highlight active nav link
+        document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
+            if (a.getAttribute('href') === 'index.html') a.classList.add('active');
+        });
+    </script>
+</body>
+</html>

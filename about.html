@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSN Mobile — About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav id="main-nav">
+    <div class="nav-inner">
+        <a class="logo" href="index.html">MS<span>N</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latest.html">Latest Release</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:10px;">
+            <a class="btn desktop-cta" href="latest.html">Shop Now</a>
+            <button id="nav-toggle-btn" class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="latest.html">📱 Latest Release</a></li>
+            <li><a href="review.html">💬 Review</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+        <a class="btn mobile-cta" href="latest.html">Shop Now →</a>
+    </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <span class="tag">ℹ️ Our story</span>
+            <h1>We're MSN.<br/>We live for phones.</h1>
+            <p>Started in Phnom Penh, built for everyone. MSN brings the world's best smartphones to Cambodia with honest prices and zero hassle.</p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="page-section" style="padding-top:0;">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Our mission</h3>
+                    <p>To make premium smartphones accessible to everyone in Cambodia — without the tourist markup or confusing small print.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Our promise</h3>
+                    <p>Every phone is 100% genuine, unlocked, and covered by a full manufacturer warranty. What you see is exactly what you get.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌏</div>
+                    <h3>Our reach</h3>
+                    <p>We ship nationwide across Cambodia and to 12 countries in Southeast Asia — fast, tracked, and fully insured.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner container">
+            <p>© 2026 MSN Mobile. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Hamburger -->
+    <script>
+        // Mobile menu toggle
+        const nav = document.getElementById("main-nav");
+        const overlay = document.getElementById("nav-overlay");
+        const toggle = document.getElementById("nav-toggle-btn");
+
+        function openMenu() {
+            nav.classList.add("menu-open");
+            overlay.classList.add("visible");
+        }
+        function closeMenu() {
+            nav.classList.remove("menu-open");
+            overlay.classList.remove("visible");
+        }
+
+        toggle.addEventListener("click", () => {
+            nav.classList.contains("menu-open") ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener("click", closeMenu);
+        document.querySelectorAll(".mobile-menu a").forEach(a => a.addEventListener("click", closeMenu));
+        // Highlight active nav link
+        document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
+            if (a.getAttribute('href') === 'about.html') a.classList.add('active');
+        });
+    </script>
+
+</body>
+</html>

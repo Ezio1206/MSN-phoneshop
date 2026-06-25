@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSN Mobile — About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav id="main-nav">
+    <div class="nav-inner">
+        <a class="logo" href="index.html">MS<span>N</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latest.html">Latest Release</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:10px;">
+            <a class="btn desktop-cta" href="latest.html">Shop Now</a>
+            <button id="nav-toggle-btn" class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="latest.html">📱 Latest Release</a></li>
+            <li><a href="review.html">💬 Review</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+        <a class="btn mobile-cta" href="latest.html">Shop Now →</a>
+    </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <span class="tag">💬 Customer reviews</span>
+            <h1>Real phones,<br/>real opinions.</h1>
+            <p>Honest reviews from verified MSN buyers — no paid write-ups, no filters, just the truth.</p>
+        </div>
+    </section>
+
+    <!-- Overall rating -->
+    <section class="page-section" style="padding-top:0;">
+        <div class="container">
+            <div class="rating-summary">
+                <div class="rating-left">
+                    <div class="rating-big">4.8</div>
+                    <div class="stars" style="font-size:22px;">★★★★★</div>
+                    <div class="rating-meta">Based on 3,240 verified reviews</div>
+                </div>
+                <div class="rating-bars">
+                    <div class="rating-bar-row"><span>Product quality</span><div class="bar"><div class="bar-fill" style="width:96%;"></div></div><span>4.9</span></div>
+                    <div class="rating-bar-row"><span>Delivery speed</span><div class="bar"><div class="bar-fill" style="width:92%;"></div></div><span>4.7</span></div>
+                    <div class="rating-bar-row"><span>Customer support</span><div class="bar"><div class="bar-fill" style="width:90%;"></div></div><span>4.6</span></div>
+                    <div class="rating-bar-row"><span>Value for money</span><div class="bar"><div class="bar-fill" style="width:94%;"></div></div><span>4.8</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-head">
+                <span class="tag">📱 By device</span>
+                <h2>What buyers are saying</h2>
+                <p>Feedback on our most popular phones from real customers.</p>
+            </div>
+            <div class="reviews-grid">
+
+                <div class="review-card">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                        <div style="font-size:32px;">📱</div>
+                        <div>
+                            <div style="font-family:var(--ff-head);font-weight:700;font-size:15px;">iPhone 16 Pro</div>
+                            <div style="font-size:12px;color:var(--muted);">Apple</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Got mine in less than 24 hours. The camera upgrade over the 15 Pro is genuinely noticeable — the new AI features are impressive. MSN's price beat every other store I checked."</blockquote>
+                    <div class="reviewer">
+                        <div class="avatar">SK</div>
+                        <div><strong>Sophea K.</strong><span>Phnom Penh · Verified buyer</span></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                        <div style="font-size:32px;">🤖</div>
+                        <div>
+                            <div style="font-family:var(--ff-head);font-weight:700;font-size:15px;">Galaxy S25 Ultra</div>
+                            <div style="font-size:12px;color:var(--muted);">Samsung</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"The S Pen experience on this thing is unreal. Battery lasts me two full days easily. Packaging was perfect and it arrived with a free case — didn't expect that. Solid shop."</blockquote>
+                    <div class="reviewer">
+                        <div class="avatar">DV</div>
+                        <div><strong>David V.</strong><span>Siem Reap · Verified buyer</span></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                        <div style="font-size:32px;">🟢</div>
+                        <div>
+                            <div style="font-family:var(--ff-head);font-weight:700;font-size:15px;">Pixel 9 Pro</div>
+                            <div style="font-size:12px;color:var(--muted);">Google</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Best camera phone I've ever owned, full stop. Google's photo processing is years ahead. MSN staff helped me pick the right storage tier — great advice, great price."</blockquote>
+                    <div class="reviewer">
+                        <div class="avatar">LM</div>
+                        <div><strong>Lisa M.</strong><span>Battambang · Verified buyer</span></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                    <div style="font-size:32px;">🌀</div>
+                    <div>
+                        <div style="font-family:var(--ff-head);font-weight:700;font-size:15px;">Galaxy Z Flip 6</div>
+                        <div style="font-size:12px;color:var(--muted);">Samsung</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+                    <blockquote>"Love the flip form factor — so compact in my pocket. The cover screen is more useful than I expected. Dropped one star only because the crease is still visible. Otherwise perfect."</blockquote>
+                    <div class="reviewer">
+                        <div class="avatar">RN</div>
+                        <div><strong>Rattanak N.</strong><span>Kampot · Verified buyer</span></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                    <div style="font-size:32px;">🔴</div>
+                    <div>
+                        <div style="font-family:var(--ff-head);font-weight:700;font-size:15px;">OnePlus 12R Ace</div>
+                        <div style="font-size:12px;color:var(--muted);">OnePlus</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                    <blockquote>"100W charging is insane — 0 to 100% in under 25 minutes. For $529 this phone makes no compromises that matter to me. MSN had it in stock when everywhere else was sold out."</blockquote>
+                    <div class="reviewer">
+                        <div class="avatar">PM</div>
+                        <div><strong>Pich M.</strong><span>Kandal · Verified buyer</span></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                    <div style="font-size:32px;">💚</div>
+                    <div>
+                        <div style="font-family:var(--ff-head);font-weight:700;font-size:15px;">Redmi Note 14 Pro</div>
+                        <div style="font-size:12px;color:var(--muted);">Xiaomi</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+                    <blockquote>"At $249 this is genuinely unbeatable. Display is bright, camera handles daylight brilliantly. MIUI takes some getting used to but it's fine. Great budget buy from MSN."</blockquote>
+                    <div class="reviewer">
+                        <div class="avatar">BT</div>
+                        <div><strong>Borey T.</strong><span>Takéo · Verified buyer</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leave a review -->
+    <section class="newsletter">
+        <div class="container">
+            <span class="tag">✍️ Share your experience</span>
+            <h2>Bought from MSN?</h2>
+            <p>We'd love to hear what you think. Leave a review and help other buyers make the right choice.</p>
+            <div class="email-form">
+                <input type="text" placeholder="Your name" style="width:160px;"/>
+                <input type="email" placeholder="your@email.com"/>
+                <button class="btn">Submit review</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner container">
+            <p>© 2026 MSN Mobile. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Hamburger -->
+    <script>
+        // Mobile menu toggle
+        const nav = document.getElementById("main-nav");
+        const overlay = document.getElementById("nav-overlay");
+        const toggle = document.getElementById("nav-toggle-btn");
+
+        function openMenu() {
+            nav.classList.add("menu-open");
+            overlay.classList.add("visible");
+        }
+        function closeMenu() {
+            nav.classList.remove("menu-open");
+            overlay.classList.remove("visible");
+        }
+
+        toggle.addEventListener("click", () => {
+            nav.classList.contains("menu-open") ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener("click", closeMenu);
+        document.querySelectorAll(".mobile-menu a").forEach(a => a.addEventListener("click", closeMenu));
+        // Highlight active nav link
+        document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
+            if (a.getAttribute('href') === 'review.html') a.classList.add('active');
+        });
+    </script>
+
+</body>
+</html>
